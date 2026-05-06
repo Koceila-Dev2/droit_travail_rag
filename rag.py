@@ -57,5 +57,5 @@ class RAG:
 
 if __name__ == "__main__":
     rag_object = RAG(vector_db_name="droits_travail_embeddings_db")
-    response = rag_object.answer_question(question="est ce que un alternant paye des impots en 2026 ou pas ?")
+    response = rag_object.answer_question(question="quels sont les droits d'un salarié en cas de licenciement ?")
     print(response)

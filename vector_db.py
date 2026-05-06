@@ -107,7 +107,7 @@ class VectorDB:
 		# return embeddings
 
 
-	def retrieve(self, question, n=3):
+	def retrieve(self, question, n=5):
 		embedded_question = self.get_embeddings([question])[0]
 
 		collection = self.chroma.get_or_create_collection(self.vector_db_name)
