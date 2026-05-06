@@ -1,2 +1,2 @@
-EMBEDDING_MODEL_NAME="distiluse-base-multilingual-cased-v2"
+EMBEDDING_MODEL_NAME="mistral-embed"
 LLM_MODEL_NAME="llama-3.3-70b-versatile"
