@@ -1,14 +1,9 @@
 from groq import Groq
-
-
-from groq import Groq
 from dotenv import load_dotenv
 import json
-import os 
-
+import os
 from vector_db import VectorDB
-
-from config import LLM_MODEL_NAME
+from config import LLM_MODEL_NAME,EMBEDDING_MODEL_NAME
 
 
 
@@ -61,6 +56,6 @@ class RAG:
 
 
 if __name__ == "__main__":
-    rag_object = RAG(vector_db_name="infinite_knowledge")
-    response = rag_object.answer_question(question="Quelle est la couleur du chat qui s'appelle Henri et à qui est ce qu'il appartient ?")
+    rag_object = RAG(vector_db_name="droits_travail_embeddings_db")
+    response = rag_object.answer_question(question="est ce que un alternant paye des impots en 2026 ou pas ?")
     print(response)
